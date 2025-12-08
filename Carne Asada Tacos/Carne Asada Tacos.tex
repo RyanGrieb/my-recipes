@@ -1,0 +1,83 @@
+\documentclass[14pt]{extarticle} 
+\usepackage[utf8]{inputenc}
+
+% --- REMOVE PAGE NUMBERING ---
+\pagestyle{empty}
+
+% --- MARGIN SETUP ---
+\usepackage[left=0.75in, right=0.75in, top=0.5in, bottom=0.5in]{geometry}
+
+% --- LIST SETTINGS ---
+\usepackage{enumitem} 
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1.5em}
+
+\usepackage{parskip} 
+
+% --- CONTROL SECTION FONT SIZE ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em} 
+
+% --- FONT SETUP ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} 
+
+% --- CUSTOM COMMAND FOR TITLE ---
+\newcommand{\makeRecipeTitle}{
+	{\noindent \Large \textbf{Carne Asada Tacos}} 
+	\par 
+	\vspace{-0.75em} 
+}
+
+\begin{document}
+
+% ================= PAGE 1 =================
+\makeRecipeTitle
+
+\section*{Ingredients}
+
+\begin{itemize}[itemsep=0.2em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+	\item Flank Steak – 1 lb
+	\item Avocado – 1 Jumbo
+	\item Black Pepper – 1 tsp
+	\item Chili Powder – 1 tsp
+	\item Cilantro – ½ cup
+	\item Cumin – 1 tsp
+	\item Garlic Cloves – 3
+	\item Garlic Powder – 1 tsp
+	\item Lime – 1
+	\item Orange – 1
+	\item Onion – 1 (divided into two parts)
+	\item Onion Powder – 1 tsp
+	\item Oregano – 1 tsp
+	\item Paprika – 1 tsp
+	\item Salt – 1.5 tsp
+	\item Small Corn Tortillas – 1 Bag
+	\item Worcestershire Sauce – 2 tsp
+\end{itemize}
+
+\newpage
+\makeRecipeTitle
+\section*{Instructions}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=0.25em]
+
+	\item \textbf{Marinate} \\
+	      Put the flank steak into a bag with black pepper, chili powder, cilantro, cumin, garlic, garlic powder, juice of the orange and lime, half of the onion (chopped), onion powder, oregano, paprika, salt, and Worcestershire sauce. Let it marinate for at least 30 minutes.
+
+	\item \textbf{Cook Steak} \\
+	      Remove the flank steak from the bag and place it in a pan on medium heat. Add the remaining seasonings from the marinade onto the steak. Cook until the steak reads 140$^\circ$F internal temperature. Try to get a nice char on the steak!
+
+	\item \textbf{Cook Onions} \\
+	      Sauté the other half of the onion if desired until browned.
+
+	\item \textbf{Prep} \\
+	      Cut up the steak into small pieces for the tacos. Slice or cube the avocado.
+
+	\item \textbf{Assemble} \\
+	      Assemble the corn tacos with the steak, grilled onion, avocado, and fresh cilantro.
+
+\end{enumerate}
+
+\end{document}

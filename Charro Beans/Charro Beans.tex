@@ -1,0 +1,102 @@
+\documentclass[14pt]{extarticle} 
+\usepackage[utf8]{inputenc}
+
+% --- REMOVE PAGE NUMBERING ---
+\pagestyle{empty}
+
+% --- MARGIN SETUP ---
+\usepackage[left=0.75in, right=0.75in, top=0.5in, bottom=0.5in]{geometry}
+
+% --- LIST SETTINGS ---
+\usepackage{enumitem} 
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1.5em}
+
+\usepackage{parskip} 
+
+% --- CONTROL SECTION FONT SIZE ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em} 
+
+% --- FONT SETUP ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} 
+
+% --- CUSTOM COMMAND FOR TITLE ---
+\newcommand{\makeRecipeTitle}{
+	{\noindent \Large \textbf{Charro Beans}} 
+	\par 
+	\vspace{-0.75em} 
+}
+
+\begin{document}
+
+% ================= PAGE 1 =================
+\makeRecipeTitle
+
+\section*{Ingredients}
+
+\textbf{For the Beans}
+\begin{itemize}[itemsep=0.1em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+      \item Dried Pinto Beans – 1 lb (454g), rinsed and sorted
+      \item White Onion – ½ medium, peeled and halved
+      \item Garlic Cloves – 6, peeled
+      \item Water – 10 cups
+      \item Kosher Salt – 2 tsp
+\end{itemize}
+
+\textbf{Charro Base \& Meats}
+\begin{itemize}[itemsep=0.1em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+      \item Bacon – 8 oz, diced
+      \item Cooked Ham – 1 cup, diced (optional)
+      \item Mexican Chorizo – 4 oz, casings removed (optional)
+      \item White Onion – 1 large, diced
+      \item Garlic Cloves – 3, minced
+      \item Jalapeño Peppers – 2 large, seeded and diced
+      \item Roma Tomatoes – 3, diced
+      \item Chipotle Pepper in Adobo – 1, minced (optional)
+      \item Chicken Broth – ½ cup (for deglazing)
+\end{itemize}
+
+\textbf{Seasonings \& Finishing}
+\begin{itemize}[itemsep=0.1em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+      \item Cumin – 2 tsp
+      \item Mexican Oregano – ½ tsp
+      \item Black Pepper – ½ tsp
+      \item Fresh Cilantro – ½ cup, chopped
+\end{itemize}
+
+\newpage
+\makeRecipeTitle
+\section*{Instructions}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=0.25em]
+
+      \item \textbf{Cook the Beans (1.5--2 hours)} \\
+            Place rinsed beans, onion halves, 6 peeled garlic cloves, water, and 2 tsp salt in a large Dutch oven or heavy pot. Bring to a boil over medium-high heat, then reduce to medium-low, cover, and simmer until beans are tender—about 1.5 to 2 hours. Check periodically and add water if needed to keep beans submerged. When beans are tender, remove and discard the onion halves and garlic cloves.
+
+      \item \textbf{Create Bean Paste (5 minutes)} \\
+            Remove pot from heat. Transfer 1 cup of cooked beans and 1 cup of the hot bean broth to a blender. \\
+            \textit{\textbf{Safety Note:} When blending hot liquids, remove the center cap from the blender lid and cover the opening with a folded kitchen towel to allow steam to escape. Start on low speed and increase gradually.} \\
+            Blend until completely smooth to create a creamy bean paste. Transfer the remaining beans and broth to a large heatproof bowl and set aside.
+
+      \item \textbf{Render Bacon \& Cook Meats (12--15 minutes)} \\
+            In the now-empty pot, cook diced bacon over medium heat, stirring occasionally, until fat renders and edges are crispy (8--10 mins). Remove bacon with a slotted spoon and set aside. \\
+            \textbf{If using chorizo:} Add to bacon fat, breaking apart with a spoon. Cook until browned (4--5 mins). Remove and set aside. \\
+            \textbf{If using ham:} Cook briefly until warmed (1--2 mins). Remove and set aside. \\
+            Pour off all but 3 tablespoons of the rendered fat from the pot.
+
+      \item \textbf{Sauté Aromatics (12--13 minutes)} \\
+            Add diced onion to the bacon fat and sauté until softened (5 mins). Stir in minced garlic and jalapeño peppers; cook for 1 minute until fragrant. Add diced tomatoes and chipotle pepper (if using); cook 5--7 minutes, stirring occasionally, until tomatoes soften and release their juices.
+
+      \item \textbf{Deglaze \& Combine (22--25 minutes)} \\
+            Pour in ½ cup chicken broth and scrape the bottom of the pot with a wooden spoon to release flavorful browned bits. Let reduce slightly (1 min). \\
+            Return all cooked meats to the pot. Add the reserved beans and their broth back to the pot. Stir in the bean paste and ½ cup water (swirl water in blender to rinse remaining paste). Add cumin, oregano, and black pepper. Bring to a gentle boil, then reduce heat to low and simmer, covered, for 15--20 minutes, stirring occasionally.
+
+      \item \textbf{Finish \& Serve} \\
+            Remove from heat and stir in chopped cilantro. Taste and add salt as needed, beginning with 1 teaspoon and adjusting from there (depending on saltiness of meats). Serve hot with your choice of garnishes.
+
+\end{enumerate}
+
+\end{document}
