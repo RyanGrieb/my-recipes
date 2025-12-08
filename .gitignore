@@ -13,6 +13,11 @@
 # Office lock files
 .~lock*
 
+# Word Documents (Source files are now LaTeX)
+*.docx
+# But keep the archive
+!Archive/*.docx
+
 # OS generated files
 .DS_Store
 Thumbs.db
