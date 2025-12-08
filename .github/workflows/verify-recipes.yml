@@ -16,9 +16,10 @@ jobs:
     - name: Compile Recipes
       uses: xu-cheng/latex-action@v3
       with:
-        root_file: preamble.tex
+        root_file: .github/scripts/build_all_recipes.sh
         compiler: bash
-        args: -c "find . -name '*.tex' ! -name 'preamble.tex' -print0 | xargs -0 -n 1 bash -c 'echo \"Compiling \$1\"; cd \"\$(dirname \"\$1\")\" && pdflatex -interaction=nonstopmode -halt-on-error \"\$(basename \"\$1\")\"' _"
+        # args can be empty since we are just running the bash script
+        args: ""
 
     - name: Upload PDF Artifacts
       uses: actions/upload-artifact@v4
