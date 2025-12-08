@@ -1,0 +1,91 @@
+\documentclass[14pt]{extarticle} 
+\usepackage[utf8]{inputenc}
+
+% --- REMOVE PAGE NUMBERING ---
+\pagestyle{empty}
+
+% --- MARGIN SETUP ---
+\usepackage[left=0.75in, right=0.75in, top=0.5in, bottom=0.5in]{geometry}
+
+% --- LIST SETTINGS ---
+\usepackage{enumitem} 
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1.5em}
+
+\usepackage{parskip} 
+
+% --- CONTROL SECTION FONT SIZE ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em} 
+
+% --- FONT SETUP ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} 
+
+% --- CUSTOM COMMAND FOR TITLE ---
+\newcommand{\makeRecipeTitle}{
+	{\noindent \Large \textbf{Korean Egg Rice}} 
+	\par 
+	\vspace{-0.75em} 
+}
+
+\begin{document}
+
+% ================= PAGE 1 =================
+\makeRecipeTitle
+
+\section*{Ingredients}
+
+% UPDATED: Uses \raisebox to shift the bullet down (-0.25ex) for perfect vertical centering
+\begin{itemize}[itemsep=0.2em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+	\item Steamed Rice – 1 cup (Short-grain or Sushi rice works best)
+	\item Unsalted Butter – 1 tablespoon
+	\item Large Egg – 1
+	\item Avocado Oil – 1 tsp (for frying)
+	\item Soy Sauce – 2 tsp (or to taste)
+	\item Sesame Oil – 1 tsp (toasted)
+	\item Green Onion – 1 stalk, finely sliced
+	\item Sesame Seeds – 1 tsp (toasted)
+	\item Optional: Roasted seaweed (nori) crumbles
+\end{itemize}
+
+\newpage
+
+% ================= PAGE 2 =================
+\makeRecipeTitle
+
+\section*{Instructions}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=0.25em]
+
+	\item \textbf{Prep} \\
+	      Finely slice the green onion. If your sesame seeds are raw, quickly toast them in a dry pan for 1–2 minutes until golden and fragrant. Set garnishes aside.
+
+	\item \textbf{The Rice (Must be Piping Hot)}
+	      \begin{itemize}[label=--]
+		      \item \textbf{Fresh Rice:} Use immediately after cooking.
+		      \item \textbf{Leftover Rice:} Place in a bowl, sprinkle with a few drops of water, cover, and microwave for 2–3 minutes.
+		      \item \textbf{The Butter Mix:} Immediately add the tablespoon of butter to the hot rice. Mix vigorously until the butter is fully melted and coats every grain. Transfer to your serving bowl.
+	      \end{itemize}
+
+	\item \textbf{The Egg} \\
+	      Heat a non-stick skillet over Medium-Low heat. Add the avocado oil and swirl to coat.
+	      \begin{itemize}[label=--]
+		      \item Crack the egg gently into the pan.
+		      \item Cook for 2–3 minutes until the whites are opaque and nearly set, but the yolk is still runny.
+		      \item \textbf{Chef’s Tip:} Tilt the pan slightly and spoon the hot oil over the yolk for the final 30 seconds. This sets the top of the yolk without overcooking it.
+	      \end{itemize}
+
+	\item \textbf{Assembly} \\
+	      Slide the fried egg directly onto the center of the buttered rice.
+
+	\item \textbf{The Finish}
+	      \begin{itemize}[label=--]
+		      \item Drizzle the soy sauce and sesame oil directly over the egg and rice.
+		      \item Sprinkle generously with sesame seeds and green onions.
+	      \end{itemize}
+
+\end{enumerate}
+
+\end{document}

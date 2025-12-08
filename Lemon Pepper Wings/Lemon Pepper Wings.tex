@@ -1,0 +1,99 @@
+\documentclass[14pt]{extarticle} 
+\usepackage[utf8]{inputenc}
+
+% --- REMOVE PAGE NUMBERING ---
+\pagestyle{empty}
+
+% --- MARGIN SETUP ---
+\usepackage[left=0.75in, right=0.75in, top=0.5in, bottom=0.5in]{geometry}
+
+% --- LIST SETTINGS ---
+\usepackage{enumitem} 
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1.5em}
+
+\usepackage{parskip} 
+
+% --- CONTROL SECTION FONT SIZE ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em} 
+
+% --- FONT SETUP ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} 
+
+% --- CUSTOM COMMAND FOR TITLE ---
+\newcommand{\makeRecipeTitle}{
+	{\noindent \Large \textbf{Air-Fryer Lemon Pepper Wings}} 
+	\par 
+	\vspace{-0.75em} 
+}
+
+\begin{document}
+
+% ================= PAGE 1 =================
+\makeRecipeTitle
+
+\section*{Ingredients}
+
+% UPDATED: Uses \raisebox to shift the bullet down (-0.25ex) for perfect vertical centering
+\begin{itemize}[itemsep=0.2em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+    \item Chicken Wings – 2 lbs (Split into drumettes and flats, patted extremely dry)
+    \item All-Purpose Flour – ½ cup (For dredging)
+    \item Cornstarch – ½ cup (Crucial for crispiness)
+    \item Baking Powder – 1 tbsp (Aluminum-free; creates bubbles)
+    \item Lemon Pepper Seasoning – 3 tbsp (Divided: 1 tbsp for flour, 2 tbsp for finishing)
+    \item MSG – ½ tsp (To season flour, optional but recommended)
+    \item Garlic Powder – 1 tsp (To season flour)
+    \item Avocado Oil Spray – As needed (Or any neutral high-heat spray)
+    \item Unsalted Butter – 2 tbsp (Melted, for the final glaze)
+\end{itemize}
+
+\newpage
+
+% ================= PAGE 2 =================
+\makeRecipeTitle
+
+\section*{Instructions}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=0.25em]
+
+    \item \textbf{Prep the Wings (The Drying Step)}
+          \begin{itemize}[label=--]
+              \item Pat the chicken wings extremely dry with paper towels.
+              \item Place wings in a bowl and toss with 1 tbsp of oil.
+          \end{itemize}
+
+    \item \textbf{The Dredge}
+          \begin{itemize}[label=--]
+              \item In a large bowl or Ziploc bag, mix the Flour, Cornstarch, Baking Powder, MSG, Garlic Powder, and 1 tbsp Lemon Pepper.
+              \item Toss the oiled wings in the mixture.
+              \item \textbf{CRITICAL STEP:} Shake the wings vigorously to remove excess flour.
+          \end{itemize}
+
+    \item \textbf{The First Fry (Cook \& Render)}
+          \begin{itemize}[label=--]
+              \item Preheat air fryer to 360°F (180°C) for 3 minutes.
+              \item Spray the basket lightly with oil. Place wings in a single layer (do not overcrowd).
+              \item Spray the tops of the wings generously with oil spray until no white flour spots remain.
+              \item Cook at 360°F for 15 minutes.
+          \end{itemize}
+
+    \item \textbf{The Flip}
+          \begin{itemize}[label=--]
+              \item Flip the wings and spray them lightly with oil again.
+              \item Increase heat to 400°F (200°C).
+              \item Cook for 5–8 minutes until golden brown and crispy. Watch closely so the tips don't burn.
+          \end{itemize}
+
+    \item \textbf{The Lemon Pepper Finish (Better than sprinkling)}
+          \begin{itemize}[label=--]
+              \item While wings are finishing, melt the 2 tbsp butter in a large bowl and mix in the remaining 1 tbsp Lemon Pepper Seasoning (and lemon juice if using).
+              \item Transfer the hot, crispy wings directly into the butter bowl.
+              \item Toss immediately. The heat from the wings will "bloom" the pepper flavor, making it more intense without tasting burnt.
+          \end{itemize}
+
+\end{enumerate}
+
+\end{document}
