@@ -10,6 +10,11 @@
 *.bbl
 *.blg
 
+# Generated merge file
+all-recipes.tex
+# Generated all recipes PDF
+all-recipes.pdf
+
 # Office lock files
 .~lock*
 
