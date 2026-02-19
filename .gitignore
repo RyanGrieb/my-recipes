@@ -15,6 +15,8 @@ all-recipes.tex
 # Generated all recipes PDF
 all-recipes.pdf
 
+all-recipes.synctex(busy)
+
 # Office lock files
 .~lock*
 
