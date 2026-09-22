@@ -31,6 +31,9 @@ Here are the recipes currently in this collection:
 *   **Charro Beans**
 *   **Chicken Vegetable Stir-Fry**
 *   **Egg Drop Soup**
+*   **Frozen Black Beans**
+*   **Frozen Braised Napa Cabbage**
+*   **Frozen Cilantro Rice**
 *   **Korean Egg Rice**
 *   **Picadillo**
 *   **Potato Soup**
