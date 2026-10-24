@@ -34,6 +34,7 @@ Here are the recipes currently in this collection:
 *   **Egg Drop Soup**
 *   **Frozen Black Beans**
 *   **Frozen Braised Napa Cabbage**
+*   **Frozen Breakfast Burrito Meal Prep**
 *   **Frozen Cilantro Rice**
 *   **Korean Egg Rice**
 *   **Picadillo**
