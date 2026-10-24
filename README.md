@@ -23,6 +23,7 @@ Here are the recipes currently in this collection:
 ### 🍗 Chicken
 *   **Butter Chicken**
 *   **Creamy Tuscan Chicken**
+*   **Garlic Herb Chicken Bowl Meal Prep**
 *   **Lemon Pepper Wings**
 *   **Mexican Chicken Marinade**
 *   **Chipotle Meal Prep**
