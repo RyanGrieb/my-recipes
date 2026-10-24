@@ -24,3 +24,12 @@
     {\noindent \Large \textbf{#1}}
     \par \vspace{-0.75em}
 }
+% --- CUSTOM COMMAND FOR SOURCE CREDIT ---
+% Usage: \recipeSource{Creator -- Video Title}{https://...}
+% Place just before \end{document}; pins the credit to the bottom of the last page.
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\newcommand{\recipeSource}[2]{
+    \vfill
+    {\noindent \footnotesize \textbf{Source:} #1 \\ \url{#2}}
+}

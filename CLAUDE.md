@@ -264,6 +264,24 @@ served straight away — are the one exception to the plain-folder-name rule. Th
 and the README entry, so they are never mistaken for a dish to eat now. They also end on a
 `Portion and Freeze` step instead of `Serve`. Example: `Frozen Black Beans/Frozen Black Beans.tex`.
 
+## Source credit (optional)
+
+When a recipe comes from a video or website, credit it with `\recipeSource{}{}` (defined in
+`preamble.tex`) as the last line before `\end{document}`. It pins a small "Source:" line and a
+clickable link to the bottom of the final page:
+
+```latex
+\end{enumerate}
+
+\recipeSource{Chef Jack Ovens -- 55g Protein Meal Prep That Doesn't Get Dry}{https://www.youtube.com/watch?v=vAsaq06wVDY}
+
+\end{document}
+```
+
+First argument is `Creator -- Title` (use `--`; a literal `|` renders as a dash-like glyph in
+this font setup, so drop it from video titles). For YouTube, get the exact creator and title from
+`https://www.youtube.com/oembed?url=<video url>&format=json` rather than guessing.
+
 ## Building
 
 Single recipe:
