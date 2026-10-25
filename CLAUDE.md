@@ -55,6 +55,7 @@ This is the exact shape of the majority of recipes (e.g. `Creamy Tuscan Chicken`
 
 % ================= PAGE 1 =================
 \makeRecipeTitle{Recipe Name}
+\recipeServings{4--5}
 
 \section*{Ingredients}
 
@@ -263,6 +264,18 @@ served straight away — are the one exception to the plain-folder-name rule. Th
 `Frozen ` prefix **everywhere**: folder, `.tex` and `.pdf` filenames, `\makeRecipeTitle{}`,
 and the README entry, so they are never mistaken for a dish to eat now. They also end on a
 `Portion and Freeze` step instead of `Serve`. Example: `Frozen Black Beans/Frozen Black Beans.tex`.
+
+## Servings
+
+Every recipe has a `\recipeServings{...}` line directly under its **first** `\makeRecipeTitle`
+(page 1 only, not on continuation or instructions pages). It renders as a small italic
+"Serves ..." line. Use `--` for ranges and add a short parenthetical when the unit isn't a
+plated meal: `\recipeServings{3--4}`, `\recipeServings{8--10 (as a side)}`,
+`\recipeServings{6 (one burrito each)}`, `\recipeServings{5 (meal-prep containers)}`.
+
+Use the source's yield when it states one. Otherwise estimate from the main ingredient
+(roughly 5--7 oz raw protein per main-course serving). If the extra line pushes ingredients
+onto a new page, tighten the lists with `itemsep=0.1em` (see Grouped ingredients).
 
 ## Source credit (optional)
 

@@ -24,6 +24,13 @@
     {\noindent \Large \textbf{#1}}
     \par \vspace{-0.75em}
 }
+% --- CUSTOM COMMAND FOR SERVINGS ---
+% Usage: \recipeServings{4--5} or \recipeServings{6 (one burrito each)}
+% Place directly after the first \makeRecipeTitle on page 1.
+\newcommand{\recipeServings}[1]{
+    {\noindent \itshape Serves #1 \par}
+    \vspace{-0.75em}
+}
 % --- CUSTOM COMMAND FOR SOURCE CREDIT ---
 % Usage: \recipeSource{Creator -- Video Title}{https://...}
 % Place just before \end{document}; pins the credit to the bottom of the last page.
