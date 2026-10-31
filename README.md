@@ -24,6 +24,7 @@ Here are the recipes currently in this collection:
 *   **Butter Chicken**
 *   **Creamy Tuscan Chicken**
 *   **Garlic Herb Chicken Bowl Meal Prep**
+*   **Lemon Chicken Potato Meal Prep**
 *   **Lemon Pepper Wings**
 *   **Mexican Chicken Marinade**
 *   **Chipotle Meal Prep**
