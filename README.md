@@ -29,6 +29,7 @@ Here are the recipes currently in this collection:
 *   **Chipotle Meal Prep**
 
 ### 🥣 Soups, Sides & Others
+*   **Breakfast Frittata**
 *   **Charro Beans**
 *   **Chicken Vegetable Stir-Fry**
 *   **Egg Drop Soup**
