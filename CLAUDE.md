@@ -273,6 +273,31 @@ Both lead with a bold topic label ending in a colon.
 - Use `\\` to break a step into paragraphs when it has distinct phases.
 - Aim for 4–8 steps.
 
+### Prep Everything step
+
+Open the instructions with a `Prep Everything` step when the recipe has **5 or more items to
+cut**, or when **an ingredient that needs cutting first is added after cooking has started**
+(the bell pepper that goes in while the curry paste is frying). It is the cook's checklist
+before the stove goes on:
+
+```latex
+      \item \textbf{Prep Everything} \\
+            Grate the zucchini and all the ginger and garlic, and slice all the green onions.
+            Dice the chili, chop the cilantro, slice the bell pepper, trim the broccolini, and
+            zest and juice the lime. Rinse the rice, and measure out everything marked with a spoon.
+```
+
+- Cover every carrot line, plus any other knife or sink work the steps assume (cutting the
+  protein, rinsing rice, draining beans). Say "all the" when an ingredient is split between
+  components.
+- End with "measure out everything marked with a spoon" rather than listing each spoon line.
+- Later steps can then say "the rest of the meatball ingredients" instead of re-listing them.
+- Skip it when the only cut items go in at the very start or are a final garnish.
+- Leave an existing prep step alone if it already happens before cooking starts (`Korean Egg
+  Rice`, `Chicken Vegetable Stir-Fry`); fold a narrow one (`Prep the Cabbage`) into it.
+- If the extra step pushes the instructions past one page, tighten wording in other steps
+  rather than dropping information.
+
 ### Sub-bullets within a step
 
 When a step is a list of discrete actions rather than a paragraph, nest an itemize with dash
