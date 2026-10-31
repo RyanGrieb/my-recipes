@@ -60,8 +60,9 @@ This is the exact shape of the majority of recipes (e.g. `Creamy Tuscan Chicken`
 \section*{Ingredients}
 
 \begin{itemize}
-      \item Ingredient Name – Quantity, prep note
       \item Ingredient Name – Quantity
+      \item[\veg] Vegetable Name – Quantity, prep note
+      \item[\measure] Spice or Sauce Name – Quantity
 \end{itemize}
 
 \newpage
@@ -125,11 +126,14 @@ they compile fine.
 Format each line as `Name – Quantity, prep note`:
 
 ```latex
-\item Garlic Cloves – 6, minced
-\item Yellow Potatoes – 8 ounces (about 3--4 small), diced
+\item[\veg] Garlic Cloves – 6, minced
+\item[\veg] Yellow Potatoes – 8 ounces (about 3--4 small), diced
 \item Chicken Broth – 4 cups (945ml)
+\item[\measure] Smoked Paprika – 1 tsp (2g)
 \item Salt and Pepper – to taste
 ```
+
+The `\veg` / `\measure` labels are the prep icons; see [Prep icons](#prep-icons) below.
 
 - Ingredient names in Title Case; prep notes in lowercase after the comma.
 - Parentheses hold clarifications, brand hints, or metric equivalents: `– 1 lb (454g)`,
@@ -161,6 +165,51 @@ line followed by its own `itemize` with tightened spacing:
 Group headings are short noun phrases: `For the Beans`, `The Sauce`, `Vegetables \& Aromatics`,
 `Seasonings \& Finishing`. `Butter Chicken` uses `\subsection*{For the Chicken Marinade:}`
 instead — both render similarly, but prefer the bold-line form for new recipes.
+
+### Prep icons
+
+Two icons replace the bullet on ingredient lines that need handling **before the stove goes
+on**, so the cook can do all the cutting and measuring up front instead of being caught off
+guard mid-recipe (e.g. a bell pepper that still needs slicing when the curry paste is already
+frying). Every ingredient list uses them, grouped lists included. Both are defined in
+`preamble.tex`: `\veg` is Font Awesome's carrot, `\measure` is a measuring spoon drawn in TikZ.
+
+| Label | Means | Use it for |
+|---|---|---|
+| `\item[\veg]` (carrot) | cut, grate, or zest this first | vegetables, aromatics (garlic, ginger, chilies), fresh herbs (including a chopped garnish), citrus that gets zested |
+| `\item[\measure]` (spoon) | measure this out first | anything that needs a measuring cup or spoon: dry spices and seasonings, sauces, pastes, and condiments (soy sauce, fish sauce, curry paste, tomato paste, honey, vinegar), citrus juice, and part of a container of liquid (1 cup of stock, 2 tbsp of cream) |
+| `\item` (bullet) | nothing to prep | proteins, eggs, cheese, rice and grains, whole containers (1 can of coconut milk, a can of beans), cooking oil, water, and anything "to taste" |
+
+Deciding a line:
+
+- **"To taste" is never marked.** `Salt and Pepper – to taste` keeps a bullet; you reach for it
+  at the end, there is nothing to set out. The spoon needs an actual quantity (`– 1 tsp`).
+- **Cut beats measure.** A line that is both (`Ginger – 2 tbsp (20g), grated`) gets the carrot;
+  the cutting is the part that takes time.
+- **Garlic and ginger always get the carrot**, even though the user often buys jarred minced
+  garlic.
+- **Citrus splits by use:** the zested lime is a carrot, its juice line is a spoon.
+- **Liquids follow the measuring-tool test.** If you need a measuring cup or spoon
+  (`Chicken Stock – 1 cup`, `Heavy Cream – 2 tbsp`), use the spoon. If you use the whole
+  container (`Coconut Milk – 1 can, 14 oz (400ml)`), keep the bullet.
+- **Cooking oil and water stay plain** even when measured. They go in first, before anything
+  is in the pan that could burn while you measure.
+
+```latex
+\textbf{The Meatballs}
+\begin{itemize}[itemsep=0.1em, label={\raisebox{-0.1ex}{\large\textbullet}}]
+      \item Ground Chicken – 1.5 lbs (700g)
+      \item[\veg] Zucchini – 6.7 oz (190g), grated
+      \item[\veg] Lime – 1, zested (save it for juicing)
+      \item[\measure] Soy Sauce – 2 1/2 tbsp (40ml)
+      \item Salt and Pepper – to taste
+\end{itemize}
+```
+
+`Thai Red Chicken Meatballs Meal Prep` is the reference example. Icons go in ingredient lists
+only, never in Notes or Instructions. Don't introduce other icon types without asking: two
+icons keep each one meaningful. The preamble centers every label in a fixed slot so bullets
+line up with the icons, so never override `align`, `labelwidth`, or `labelsep` in a recipe.
 
 ## Notes section (optional)
 
