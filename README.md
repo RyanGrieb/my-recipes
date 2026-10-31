@@ -27,6 +27,7 @@ Here are the recipes currently in this collection:
 *   **Lemon Chicken Potato Meal Prep**
 *   **Lemon Pepper Wings**
 *   **Mexican Chicken Marinade**
+*   **Thai Red Chicken Meatballs Meal Prep**
 *   **Chipotle Meal Prep**
 
 ### 🥣 Soups, Sides & Others
