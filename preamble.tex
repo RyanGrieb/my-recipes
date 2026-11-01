@@ -35,6 +35,13 @@
     {\noindent \itshape Serves #1 \par}
     \vspace{-0.75em}
 }
+% --- CUSTOM COMMAND FOR YIELD ---
+% Usage: \recipeYield{about 12 cups} -- for bases like stock that aren't plated.
+% Use in place of \recipeServings, in the same spot.
+\newcommand{\recipeYield}[1]{
+    {\noindent \itshape Makes #1 \par}
+    \vspace{-0.75em}
+}
 % --- PREP ICONS ---
 % Usage: \item[\veg] Red Bell Pepper – 1, sliced
 %        \item[\measure] Fish Sauce – 1 1/2 tbsp (22ml)
@@ -56,6 +63,16 @@
         \fill[white] (0.86,0) circle (0.04);
     \end{scope}
 }}
+% --- RECIPE LINKS ---
+% Usage: \recipeLink{Lemon Pepper Wings and Drums}{Lemon Pepper Wings \& Drums}
+%        \mainRecipeLink{Chipotle Meal Prep}
+% \recipeLink opens a recipe folder next to this one; \mainRecipeLink opens one in
+% the Food Recipes repo. Both take the recipe's folder name, and relative paths keep
+% the links working as long as Food Recipes and Whole Chicken stay side by side.
+% Links are colored so they stand out from the surrounding text in print and on screen.
+\definecolor{recipelink}{RGB}{0,84,166}
+\newcommand{\recipeLink}[2]{\href{../#1/#1.pdf}{\textcolor{recipelink}{#2}}}
+\newcommand{\mainRecipeLink}[1]{\href{../../Food Recipes/#1/#1.pdf}{\textcolor{recipelink}{#1}}}
 % --- CUSTOM COMMAND FOR SOURCE CREDIT ---
 % Usage: \recipeSource{Creator -- Video Title}{https://...}
 % Place just before \end{document}; pins the credit to the bottom of the last page.

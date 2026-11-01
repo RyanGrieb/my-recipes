@@ -347,6 +347,9 @@ Every recipe has a `\recipeServings{...}` line directly under its **first** `\ma
 plated meal: `\recipeServings{3--4}`, `\recipeServings{8--10 (as a side)}`,
 `\recipeServings{6 (one burrito each)}`, `\recipeServings{5 (meal-prep containers)}`.
 
+A base that isn't plated (stock) uses `\recipeYield{about 12 cups (3 quarts)}` in the same
+spot instead; it renders as "Makes ...".
+
 Use the source's yield when it states one. Otherwise estimate from the main ingredient
 (roughly 5--7 oz raw protein per main-course serving). If the extra line pushes ingredients
 onto a new page, tighten the lists with `itemsep=0.1em` (see Grouped ingredients).
@@ -368,6 +371,14 @@ clickable link to the bottom of the final page:
 First argument is `Creator -- Title` (use `--`; a literal `|` renders as a dash-like glyph in
 this font setup, so drop it from video titles). For YouTube, get the exact creator and title from
 `https://www.youtube.com/oembed?url=<video url>&format=json` rather than guessing.
+
+## Links to other recipes
+
+When a recipe mentions another one by name, link it so the PDF opens that recipe's PDF:
+`\recipeLink{Lemon Pepper Wings and Drums}{Lemon Pepper Wings \& Drums}` (folder name, then
+display text). `\mainRecipeLink{Chipotle Meal Prep}` links through the `Food Recipes` path, so
+it also works from the sibling `Whole Chicken` repo, which shares this preamble. Both render in
+blue. `Whole Chicken Plan` is the example.
 
 ## Building
 
