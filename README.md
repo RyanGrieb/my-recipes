@@ -26,6 +26,7 @@ Here are the recipes currently in this collection:
 *   **Garlic Herb Chicken Bowl Meal Prep**
 *   **Lemon Chicken Potato Meal Prep**
 *   **Lemon Pepper Wings**
+*   **Lemon Pepper Wings and Drums**
 *   **Mexican Chicken Marinade**
 *   **Thai Red Chicken Meatballs Meal Prep**
 *   **Chipotle Meal Prep**
@@ -33,17 +34,20 @@ Here are the recipes currently in this collection:
 ### 🥣 Soups, Sides & Others
 *   **Breakfast Frittata**
 *   **Charro Beans**
+*   **Chicken Noodle Soup**
 *   **Chicken Vegetable Stir-Fry**
 *   **Egg Drop Soup**
 *   **Frozen Black Beans**
 *   **Frozen Braised Napa Cabbage**
 *   **Frozen Breakfast Burrito Meal Prep**
+*   **Frozen Chicken Stock**
 *   **Frozen Cilantro Rice**
 *   **Korean Egg Rice**
 *   **Picadillo**
 *   **Potato Soup**
 *   **Tomato Soup**
 *   **Vegetable Soup**
+*   **Whole Chicken Plan**
 
 ## 🛠️ Building Locally
 
