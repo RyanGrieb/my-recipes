@@ -384,7 +384,7 @@ When a recipe mentions another one by name, link it so the PDF opens that recipe
 `\recipeLink{Lemon Pepper Wings and Drums}{Lemon Pepper Wings \& Drums}` (folder name, then
 display text). `\mainRecipeLink{Chipotle Meal Prep}` links through the `Food Recipes` path, so
 it also works from the sibling `Whole Chicken` repo, which shares this preamble. Both render in
-blue. `Whole Chicken Plan` is the example.
+blue. No recipe in this repo uses them yet; the `Whole Chicken` plans are the examples.
 
 ## Building
 
