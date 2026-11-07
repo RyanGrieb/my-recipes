@@ -138,8 +138,9 @@ The `\cut` / `\measure` labels are the prep icons; see [Prep icons](#prep-icons)
 - Ingredient names in Title Case; prep notes in lowercase after the comma.
 - Parentheses hold clarifications, brand hints, or metric equivalents: `– 1 lb (454g)`,
   `– 1 tsp (Kashmiri recommended)`.
-- Pick abbreviated units (`tsp`, `tbsp`, `oz`) or spelled-out (`teaspoon`, `tablespoon`) and
-  stay with that choice for the whole file.
+- Abbreviate spoon units in ingredient lists (`tsp`, `tbsp`, `oz`, `lb`) so quantities scan
+  quickly and lines don't wrap. Spell them out in Instructions and Notes, where they sit in
+  a sentence: "Pour off all but 3 tablespoons of fat."
 - Ordering: lead with the star ingredient (the protein), then either alphabetize the rest or
   follow order of use — one or the other, consistently, within a recipe.
 - An optional ingredient is marked in place: `– 1, minced (optional)` or
