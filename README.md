@@ -22,6 +22,7 @@ Here are the recipes currently in this collection:
 
 ### 🍗 Chicken
 *   **Butter Chicken**
+*   **Chicken Chanko Nabe Meal Prep**
 *   **Creamy Tuscan Chicken**
 *   **Garlic Herb Chicken Bowl Meal Prep**
 *   **Lemon Chicken Potato Meal Prep**
@@ -36,6 +37,7 @@ Here are the recipes currently in this collection:
 *   **Charro Beans**
 *   **Chicken Noodle Soup**
 *   **Chicken Vegetable Stir-Fry**
+*   **Chorizo and Egg Muffins**
 *   **Egg Drop Soup**
 *   **Frozen Black Beans**
 *   **Frozen Braised Napa Cabbage**

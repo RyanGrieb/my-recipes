@@ -61,7 +61,7 @@ This is the exact shape of the majority of recipes (e.g. `Creamy Tuscan Chicken`
 
 \begin{itemize}
       \item Ingredient Name – Quantity
-      \item[\veg] Vegetable Name – Quantity, prep note
+      \item[\cut] Vegetable Name – Quantity, prep note
       \item[\measure] Spice or Sauce Name – Quantity
 \end{itemize}
 
@@ -126,14 +126,14 @@ they compile fine.
 Format each line as `Name – Quantity, prep note`:
 
 ```latex
-\item[\veg] Garlic Cloves – 6, minced
-\item[\veg] Yellow Potatoes – 8 ounces (about 3--4 small), diced
+\item[\cut] Garlic Cloves – 6, minced
+\item[\cut] Yellow Potatoes – 8 ounces (about 3--4 small), diced
 \item Chicken Broth – 4 cups (945ml)
 \item[\measure] Smoked Paprika – 1 tsp (2g)
 \item Salt and Pepper – to taste
 ```
 
-The `\veg` / `\measure` labels are the prep icons; see [Prep icons](#prep-icons) below.
+The `\cut` / `\measure` labels are the prep icons; see [Prep icons](#prep-icons) below.
 
 - Ingredient names in Title Case; prep notes in lowercase after the comma.
 - Parentheses hold clarifications, brand hints, or metric equivalents: `– 1 lb (454g)`,
@@ -172,35 +172,41 @@ Two icons replace the bullet on ingredient lines that need handling **before the
 on**, so the cook can do all the cutting and measuring up front instead of being caught off
 guard mid-recipe (e.g. a bell pepper that still needs slicing when the curry paste is already
 frying). Every ingredient list uses them, grouped lists included. Both are defined in
-`preamble.tex`: `\veg` is Font Awesome's carrot, `\measure` is a measuring spoon drawn in TikZ.
+`preamble.tex` and drawn in TikZ: `\cut` is a chef's knife, `\measure` is a measuring spoon.
 
 | Label | Means | Use it for |
 |---|---|---|
-| `\item[\veg]` (carrot) | cut, grate, or zest this first | vegetables, aromatics (garlic, ginger, chilies), fresh herbs (including a chopped garnish), citrus that gets zested |
-| `\item[\measure]` (spoon) | measure this out first | anything that needs a measuring cup or spoon: dry spices and seasonings, sauces, pastes, and condiments (soy sauce, fish sauce, curry paste, tomato paste, honey, vinegar), citrus juice, and part of a container of liquid (1 cup of stock, 2 tbsp of cream) |
-| `\item` (bullet) | nothing to prep | proteins, eggs, cheese, rice and grains, whole containers (1 can of coconut milk, a can of beans), cooking oil, water, and anything "to taste" |
+| `\item[\cut]` (knife) | cut, grate, or zest this first | vegetables, aromatics (garlic, ginger, chilies), fresh herbs (including a chopped garnish), citrus that gets zested, and any protein, tofu, or cheese the list says to cut, dice, cube, split, or grate |
+| `\item[\measure]` (spoon) | measure this out first | anything that needs a measuring cup or spoon: dry spices and seasonings, sauces, pastes, and condiments (soy sauce, fish sauce, curry paste, tomato paste, honey, vinegar), citrus juice, part of a container of liquid (1 cup of stock, 2 tbsp of cream), and oil or water with an amount (1 tbsp of oil, 10 cups of water) |
+| `\item` (bullet) | nothing to prep | proteins and cheese used whole, eggs, rice and grains, whole containers (1 can of coconut milk, a can of beans), butter, oil or water with no set amount ("cooking spray", "enough to cover"), and anything "to taste" |
 
 Deciding a line:
 
 - **"To taste" is never marked.** `Salt and Pepper – to taste` keeps a bullet; you reach for it
   at the end, there is nothing to set out. The spoon needs an actual quantity (`– 1 tsp`).
-- **Cut beats measure.** A line that is both (`Ginger – 2 tbsp (20g), grated`) gets the carrot;
+- **The knife marks the job, not the food.** If the line's prep note says to cut it before
+  cooking (`Chicken Thighs – 3, cut into 1-inch pieces`, `Firm Tofu – 14 oz, cubed`,
+  `Chicken Wings – 4, split into drumettes and flats`), it gets the knife, whatever it is. A
+  protein cooked whole and cut afterwards (`Diced chicken` in an assembly list) stays plain.
+- **Cut beats measure.** A line that is both (`Ginger – 2 tbsp (20g), grated`) gets the knife;
   the cutting is the part that takes time.
-- **Garlic and ginger always get the carrot**, even though the user often buys jarred minced
+- **Garlic and ginger always get the knife**, even though the user often buys jarred minced
   garlic.
-- **Citrus splits by use:** the zested lime is a carrot, its juice line is a spoon.
+- **Citrus splits by use:** the zested lime is a knife, its juice line is a spoon.
 - **Liquids follow the measuring-tool test.** If you need a measuring cup or spoon
   (`Chicken Stock – 1 cup`, `Heavy Cream – 2 tbsp`), use the spoon. If you use the whole
   container (`Coconut Milk – 1 can, 14 oz (400ml)`), keep the bullet.
-- **Cooking oil and water stay plain** even when measured. They go in first, before anything
-  is in the pan that could burn while you measure.
+- **Oil and water follow the same test.** An amount (`Olive Oil – 1 tbsp`, `Water – 10 cups`)
+  gets the spoon. No set amount (`Vegetable oil or cooking spray`, `Water – enough to cover the
+  beans`, `about 16 cups, enough to cover by 1 inch`) keeps the bullet.
+- **Butter stays plain.** You portion it by the wrapper markings, not a measuring spoon.
 
 ```latex
 \textbf{The Meatballs}
 \begin{itemize}[itemsep=0.1em, label={\raisebox{-0.1ex}{\large\textbullet}}]
       \item Ground Chicken – 1.5 lbs (700g)
-      \item[\veg] Zucchini – 6.7 oz (190g), grated
-      \item[\veg] Lime – 1, zested (save it for juicing)
+      \item[\cut] Zucchini – 6.7 oz (190g), grated
+      \item[\cut] Lime – 1, zested (save it for juicing)
       \item[\measure] Soy Sauce – 2 1/2 tbsp (40ml)
       \item Salt and Pepper – to taste
 \end{itemize}
@@ -287,8 +293,8 @@ before the stove goes on:
             zest and juice the lime. Rinse the rice, and measure out everything marked with a spoon.
 ```
 
-- Cover every carrot line, plus any other knife or sink work the steps assume (cutting the
-  protein, rinsing rice, draining beans). Say "all the" when an ingredient is split between
+- Cover every knife line, plus any other sink work the steps assume (rinsing rice, draining
+  beans, washing leeks). Say "all the" when an ingredient is split between
   components.
 - End with "measure out everything marked with a spoon" rather than listing each spoon line.
 - Later steps can then say "the rest of the meatball ingredients" instead of re-listing them.
