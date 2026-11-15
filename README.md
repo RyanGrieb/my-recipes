@@ -23,6 +23,7 @@ Here are the recipes currently in this collection:
 ### 🍗 Chicken
 *   **Butter Chicken**
 *   **Chicken Chanko Nabe Meal Prep**
+*   **Chicken Fajita Sheet Pan Meal Prep**
 *   **Creamy Tuscan Chicken**
 *   **Garlic Herb Chicken Bowl Meal Prep**
 *   **Lemon Chicken Potato Meal Prep**
